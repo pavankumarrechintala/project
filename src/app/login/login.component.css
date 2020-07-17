@@ -1,0 +1,23 @@
+p {
+    font-family: Lato;
+  }
+
+  .card {
+    
+    display: flex;
+    justify-content: center;
+    margin: 10% 20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   
+  }
+  .container {
+   
+
+
+   
+    align-content : center;
+  }
+
+  .form{
+      padding: 20%
+  }

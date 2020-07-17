@@ -1,0 +1,13 @@
+<div class="header">
+    <h1>Repositories</h1>
+  <button class="btn btn-danger logout" (click)="logOut()"> LogOut</button>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+<div class="container-fluid">
+  <ul>
+    <li *ngFor="let data of reposList" style="color:blue">{{data.name}}/{{data.full_name}}</li>
+  </ul>
+</div>

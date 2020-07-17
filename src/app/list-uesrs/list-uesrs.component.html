@@ -1,0 +1,36 @@
+
+
+<div class="header">
+  <h1>User List</h1>
+  <p>(UserNames)</p>
+</div>
+
+
+<div class=" container-fluid">
+
+  <div class="col-2">
+    <label><b>Search for UserName</b></label>
+    <div class="m-input-icon m-input-icon--left">
+      <input type="text" [(ngModel)]="email" class="form-control m-input m-input--solid" placeholder="Search">
+      <span class="m-input-icon__icon m-input-icon__icon--left">
+        <span>
+          <i class="la la-search"></i>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="col-3">
+
+  <div class="card" *ngFor="let user of users |  customerEmailFilter:email let i=index " (click)="goRepos(user.login)" style="cursor:pointer">
+    <div class="card-body" >
+      {{user.login}}
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- <p (click)="goRepos(user.login)" *ngFor="let user of users" ><b> {{user.login}} </b></p> -->
